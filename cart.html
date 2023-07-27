@@ -1,0 +1,328 @@
+<html>
+  <title>DB E-Commerce Website</title>
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="common.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="logo arrange-left wid-25">
+          <h1><span>db</span><span>E-Comm</span></h1>
+        </div>
+        <div class="search-product arrange-left wid-50">
+          <input type="text" placeholder="Search Products" />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="selected-products arrange-left wid-25">
+          <button class="common-btn">
+            <span> <i class="fa-solid fa-cart-shopping"></i>0</span>
+          </button>
+          <button class="common-btn">
+            <span><i class="fa-solid fa-heart"></i> 0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="full-banner-wrapper">
+      <div class="cart-header">
+        <h1>Shopping Cart</h1>
+        <h2>-My Cart-</h2>
+      </div>
+
+      <div class="wrapper next-row">
+        <div class="wid-75 arrange-left">
+          <div class="cart-details">
+            <table>
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total</th>
+                  <th>Remove</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-with-img">
+                    <img src="/women-fashion.jpg" alt="" /><span
+                      >Women Dresses</span
+                    >
+                  </td>
+                  <td><span>₹399</span></td>
+                  <td>
+                    <div class="quantity-input">
+                      <button>-</button><input type="text" value="1" /><button>
+                        +
+                      </button>
+                    </div>
+                  </td>
+
+                  <td><span>₹399</span></td>
+                  <td>
+                    <i class="fa fa-remove icon custom-delete-button"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="text-with-img">
+                    <img src="/product-3.png" alt="" /><span
+                      >Colourful Shirts</span
+                    >
+                  </td>
+                  <td><span>₹499</span></td>
+                  <td>
+                    <div class="quantity-input">
+                      <button>-</button><input type="text" value="1" /><button>
+                        +
+                      </button>
+                    </div>
+                  </td>
+
+                  <td><span>₹499</span></td>
+                  <td>
+                    <i class="fa fa-remove icon custom-delete-button"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="text-with-img">
+                    <img src="/product-2.png" alt="" /><span
+                      >Colourful Shirts</span
+                    >
+                  </td>
+                  <td><span>₹499</span></td>
+                  <td>
+                    <div class="quantity-input">
+                      <button>-</button><input type="text" value="1" /><button>
+                        +
+                      </button>
+                    </div>
+                  </td>
+
+                  <td><span>₹499</span></td>
+                  <td>
+                    <i class="fa fa-remove icon custom-delete-button"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="text-with-img">
+                    <img src="/product-1.png" alt="" /><span
+                      >Colourful Shirts</span
+                    >
+                  </td>
+                  <td><span>₹499</span></td>
+                  <td>
+                    <div class="quantity-input">
+                      <button>-</button><input type="text" value="1" /><button>
+                        +
+                      </button>
+                    </div>
+                  </td>
+
+                  <td><span>₹499</span></td>
+                  <td>
+                    <i class="fa fa-remove icon custom-delete-button"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="text-with-img">
+                    <img src="/child-fashion.jpg" alt="" /><span
+                      >Colourful Shirts</span
+                    >
+                  </td>
+                  <td><span>₹499</span></td>
+                  <td>
+                    <div class="quantity-input">
+                      <button>-</button><input type="text" value="1" /><button>
+                        +
+                      </button>
+                    </div>
+                  </td>
+
+                  <td><span>₹499</span></td>
+                  <td>
+                    <i class="fa fa-remove icon custom-delete-button"></i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="wid-25 arrange-left">
+          <div class="cart-summary-wrapper">
+            <div class="coupon-input">
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Enter Coupon Code"
+              />
+              <button>Apply</button>
+            </div>
+
+            <div class="cart-summary-body">
+              <div class="cart-summary-item">
+                <h6>Sub Total</h6>
+                <h6>₹399</h6>
+              </div>
+              <div class="cart-summary-item">
+                <h6>Shipping</h6>
+                <h6>₹39</h6>
+              </div>
+            </div>
+
+            <div class="cart-total">
+              <div class="total-header">
+                <h5>Total Amount</h5>
+                <h5>₹438</h5>
+              </div>
+              <div class="proceed-input">
+                <button>Proceed To CheckOut</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper next-row">
+        <div class="footer">
+          <div class="arrange-left margin-right-5 wid-25">
+            <div class="logo">
+              <h1><span>db</span><span>E-Comm</span></h1>
+            </div>
+
+            <p class="footer-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium eaque laboriosam aspernatur reiciendis earum
+              consequuntur sapiente voluptas nobis.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <i class="fa-solid fa-map-marker-alt"></i> #5, Hubli, Karnataka
+              </li>
+
+              <li><i class="fa-solid fa-phone"></i> +91 8197745652</li>
+
+              <li>
+                <i class="fa-solid fa-envelope"></i>dbadiger1997@gmail.com
+              </li>
+            </ul>
+          </div>
+
+          <div class="quick-links wid-25 arrange-left">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i><span>Home</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i><span>Our Shops</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i><span>Cart</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i><span>Orders</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i><span>About Us</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="quick-links wid-25 arrange-left">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i
+                  ><span>Terms & Conditions</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i
+                  ><span>Shop Details</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i><span>Facebook</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i><span>Instagram</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i><span>Home</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="news-letter wid-25 arrange-left">
+            <h3>News Letter</h3>
+            <div class="news-letter-input">
+              <input
+                type="text"
+                placeholder="Enter Name"
+                class="footer-input"
+              /><input
+                type="email"
+                placeholder="Enter Email"
+                class="footer-input"
+              />
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copy-right">
+        <div>
+          <b> &copy; Techlance Digital.</b> All rights reserved. Developed by
+          <b> Darshan Badiger</b>
+        </div>
+        <img src="./logo-instagram.jpg" alt="Instagram" />
+      </div>
+    </div>
+  </body>
+</html>

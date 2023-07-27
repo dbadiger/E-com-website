@@ -1,0 +1,435 @@
+<html>
+  <title>DB E-Commerce Website</title>
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="common.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="logo arrange-left wid-25">
+          <h1><span>db</span><span>E-Comm</span></h1>
+        </div>
+        <div class="search-product arrange-left wid-50">
+          <input type="text" placeholder="Search Products" />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="selected-products arrange-left wid-25">
+          <button class="common-btn">
+            <span> <i class="fa-solid fa-cart-shopping"></i>0</span>
+          </button>
+          <button class="common-btn">
+            <span><i class="fa-solid fa-heart"></i> 0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="full-banner-wrapper">
+      <div class="shop-header">
+        <h1>Children Dress Collection</h1>
+        <h2>-Our Shop-</h2>
+      </div>
+
+      <div class="wrapper next-row">
+        <div class="sort-options">
+          <select name="" id="">
+            <option value="1">By Name</option>
+            <option value="2">By Rating</option>
+            <option value="3">By Latest</option>
+          </select>
+        </div>
+
+        <div class="wid-25 arrange-left">
+          <h1 style="margin-bottom: 20px">Filters</h1>
+
+          <h3 style="margin-bottom: 10px">Filter By Price</h3>
+          <div class="custom-control-check">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="price-all"
+            />
+            <label for="price-all" class="custom-control-label"
+              >All Price</label
+            >
+            <span class="filter-product-count">1000</span>
+          </div>
+
+          <div class="custom-control-check">
+            <input type="checkbox" class="custom-control-input" id="0-100" />
+            <label for="0-100" class="custom-control-label">₹0 - ₹100</label>
+            <span class="filter-product-count">150</span>
+          </div>
+
+          <div class="custom-control-check">
+            <input type="checkbox" class="custom-control-input" id="101-500" />
+            <label for="101-500" class="custom-control-label"
+              >₹101 - ₹500</label
+            >
+            <span class="filter-product-count">200</span>
+          </div>
+
+          <div class="custom-control-check">
+            <input type="checkbox" class="custom-control-input" id="501-1000" />
+            <label for="501-1000" class="custom-control-label"
+              >₹501 - ₹1000</label
+            >
+            <span class="filter-product-count">100</span>
+          </div>
+          <hr class="filter-horizontal-line" />
+          <h3 style="margin-bottom: 10px">Filter By Size</h3>
+          <div class="custom-control-check">
+            <input type="checkbox" class="custom-control-input" id="s" />
+            <label for="s" class="custom-control-label">Small</label>
+            <span class="filter-product-count">100</span>
+          </div>
+
+          <div class="custom-control-check">
+            <input type="checkbox" class="custom-control-input" id="m" />
+            <label for="m" class="custom-control-label">Medium</label>
+            <span class="filter-product-count">150</span>
+          </div>
+
+          <div class="custom-control-check">
+            <input type="checkbox" class="custom-control-input" id="L" />
+            <label for="L" class="custom-control-label">Large</label>
+            <span class="filter-product-count">300</span>
+          </div>
+
+          <div class="custom-control-check">
+            <input type="checkbox" class="custom-control-input" id="XL" />
+            <label for="XL" class="custom-control-label">Extra Large</label>
+            <span class="filter-product-count">100</span>
+          </div>
+
+          <hr class="filter-horizontal-line" />
+          <h3 style="margin-bottom: 10px">Filter By Color</h3>
+          <div class="custom-control-check">
+            <input type="checkbox" class="custom-control-input" id="blue" />
+            <label for="blue" class="custom-control-label">Blue</label>
+            <span class="filter-product-count">100</span>
+          </div>
+
+          <div class="custom-control-check">
+            <input type="checkbox" class="custom-control-input" id="Red" />
+            <label for="Red" class="custom-control-label">Red</label>
+            <span class="filter-product-count">150</span>
+          </div>
+
+          <div class="custom-control-check">
+            <input type="checkbox" class="custom-control-input" id="Yellow" />
+            <label for="Yellow" class="custom-control-label">Yellow</label>
+            <span class="filter-product-count">300</span>
+          </div>
+
+          <div class="custom-control-check">
+            <input type="checkbox" class="custom-control-input" id="Black" />
+            <label for="Black" class="custom-control-label">Black</label>
+            <span class="filter-product-count">100</span>
+          </div>
+        </div>
+        <div class="product-list wid-75 arrange-left">
+          <h1 style="text-align: center; margin-bottom: 20px">
+            Product Listing
+          </h1>
+
+          <div class="wid-33 arrange-left">
+            <div class="cart">
+              <div>
+                <img src="product-2.png" alt="" />
+              </div>
+              <div class="cart-details">
+                <h6 class="cart-name-head">Sweater</h6>
+                <div class="cart-price">
+                  <h6 class="current">₹ 399</h6>
+                  <h6 class="last">₹ 999</h6>
+                </div>
+              </div>
+
+              <div class="cart-footer">
+                <a href="#">
+                  <i class="fa-solid fa-eye"></i>
+                  View Details
+                </a>
+
+                <a href="#">
+                  <i class="fa-solid fa-cart-arrow-down"></i>
+                  Add to Cart
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="wid-33 arrange-left">
+            <div class="cart">
+              <div>
+                <img src="product-2.png" alt="" />
+              </div>
+              <div class="cart-details">
+                <h6 class="cart-name-head">Sweater</h6>
+                <div class="cart-price">
+                  <h6 class="current">₹ 399</h6>
+                  <h6 class="last">₹ 999</h6>
+                </div>
+              </div>
+
+              <div class="cart-footer">
+                <a href="#">
+                  <i class="fa-solid fa-eye"></i>
+                  View Details
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-cart-arrow-down"></i>
+                  Add to Cart
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="wid-33 arrange-left">
+            <div class="cart">
+              <div>
+                <img src="product-2.png" alt="" />
+              </div>
+              <div class="cart-details">
+                <h6 class="cart-name-head">Sweater</h6>
+                <div class="cart-price">
+                  <h6 class="current">₹ 399</h6>
+                  <h6 class="last">₹ 999</h6>
+                </div>
+              </div>
+
+              <div class="cart-footer">
+                <a href="#">
+                  <i class="fa-solid fa-eye"></i>
+                  View Details
+                </a>
+
+                <a href="#">
+                  <i class="fa-solid fa-cart-arrow-down"></i>
+                  Add to Cart
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="wid-33 arrange-left">
+            <div class="cart">
+              <div>
+                <img src="product-2.png" alt="" />
+              </div>
+              <div class="cart-details">
+                <h6 class="cart-name-head">Sweater</h6>
+                <div class="cart-price">
+                  <h6 class="current">₹ 399</h6>
+                  <h6 class="last">₹ 999</h6>
+                </div>
+              </div>
+
+              <div class="cart-footer">
+                <a href="#">
+                  <i class="fa-solid fa-eye"></i>
+                  View Details
+                </a>
+
+                <a href="#">
+                  <i class="fa-solid fa-cart-arrow-down"></i>
+                  Add to Cart
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="wid-33 arrange-left">
+            <div class="cart">
+              <div>
+                <img src="product-2.png" alt="" />
+              </div>
+              <div class="cart-details">
+                <h6 class="cart-name-head">Sweater</h6>
+                <div class="cart-price">
+                  <h6 class="current">₹ 399</h6>
+                  <h6 class="last">₹ 999</h6>
+                </div>
+              </div>
+
+              <div class="cart-footer">
+                <a href="#">
+                  <i class="fa-solid fa-eye"></i>
+                  View Details
+                </a>
+
+                <a href="#">
+                  <i class="fa-solid fa-cart-arrow-down"></i>
+                  Add to Cart
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="wid-33 arrange-left">
+            <div class="cart">
+              <div>
+                <img src="product-2.png" alt="" />
+              </div>
+              <div class="cart-details">
+                <h6 class="cart-name-head">Sweater</h6>
+                <div class="cart-price">
+                  <h6 class="current">₹ 399</h6>
+                  <h6 class="last">₹ 999</h6>
+                </div>
+              </div>
+
+              <div class="cart-footer">
+                <a href="#">
+                  <i class="fa-solid fa-eye"></i>
+                  View Details
+                </a>
+
+                <a href="#">
+                  <i class="fa-solid fa-cart-arrow-down"></i>
+                  Add to Cart
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper next-row">
+        <div class="footer">
+          <div class="arrange-left margin-right-5 wid-25">
+            <div class="logo">
+              <h1><span>db</span><span>E-Comm</span></h1>
+            </div>
+
+            <p class="footer-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium eaque laboriosam aspernatur reiciendis earum
+              consequuntur sapiente voluptas nobis.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <i class="fa-solid fa-map-marker-alt"></i> #5, Hubli, Karnataka
+              </li>
+
+              <li><i class="fa-solid fa-phone"></i> +91 8197745652</li>
+
+              <li>
+                <i class="fa-solid fa-envelope"></i>dbadiger1997@gmail.com
+              </li>
+            </ul>
+          </div>
+
+          <div class="quick-links wid-25 arrange-left">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i><span>Home</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i><span>Our Shops</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i><span>Cart</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i><span>Orders</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i><span>About Us</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="quick-links wid-25 arrange-left">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i
+                  ><span>Terms & Conditions</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i
+                  ><span>Shop Details</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i><span>Facebook</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i><span>Instagram</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i><span>Home</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="news-letter wid-25 arrange-left">
+            <h3>News Letter</h3>
+            <div class="news-letter-input">
+              <input
+                type="text"
+                placeholder="Enter Name"
+                class="footer-input"
+              /><input
+                type="email"
+                placeholder="Enter Email"
+                class="footer-input"
+              />
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copy-right">
+        <div>
+          <b> &copy; Techlance Digital.</b> All rights reserved. Developed by
+          <b> Darshan Badiger</b>
+        </div>
+        <img src="./logo-instagram.jpg" alt="Instagram" />
+      </div>
+    </div>
+  </body>
+</html>

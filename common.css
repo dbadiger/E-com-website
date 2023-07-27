@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+}
+.wrapper{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.wid-25{
+    width: 25%;
+}
+.wid-50{
+    width: 50%;
+}
+.wid-75{
+    width: 75%;
+    
+}
+.arrange-left{
+    float: left;
+}
+
+.next-row{
+    clear: both;
+}
+.wid-33{
+    width: 33.3%;
+}
+
+.margin-right-5{
+    margin-right: 5%;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .wid-25, .wid-50, .wid-33, .wid-75{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .arrange-left{
+        float: none;
+    }
+    
+}
